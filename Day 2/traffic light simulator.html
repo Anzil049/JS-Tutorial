@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .light{
+            width:90px;
+            height:90px;
+            border-radius: 50%;
+            background-color: gray;
+            margin-bottom: 5px;
+            
+            
+        }
+        .content{
+            background-color: black;
+            margin-left: 695px;
+            height: 300px;
+            padding-top: 13px;
+            padding-left: 13px;
+            border-radius: 20px;
+            width: 103px;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Traffic Light Simulator</h1>
+    <div class="content">
+    <div id="red" class="light"></div>
+    <div id="orange" class="light"></div>
+    <div id="green" class="light"></div>
+    </div>
+    <script>
+            let light=["red","orange","green"];
+            let index=0;
+
+        function changelight(){
+            document.getElementById("red").style.background="gray";
+            document.getElementById("orange").style.background="gray";
+            document.getElementById("green").style.background="gray";
+
+            document.getElementById(light[index]).style.background=light[index];
+
+            index=(index+1)%light.length;
+        }
+
+        setInterval(changelight,1000);
+        changelight();
+    </script>
+</body>
+</html>

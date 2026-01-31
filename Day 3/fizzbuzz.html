@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>fiZZBuZZ</h1>
+    <input type="text" id="num" placeholder="enter a number">
+    <div id="display"></div>
+    <button onclick="fizz()">fizzbuzz</button>
+    <script>
+        let fizzbuzz=[];
+        let s;
+        function fizz(){
+        var n=parseInt(document.getElementById("num").value);
+
+        for(i=1;i<=n;i++){
+            if(i%3==0 && i%5==0){
+                s="fizzBuzz";
+                fizzbuzz.push(s);
+            }else if(i%3==0){
+                s="fizz";
+                fizzbuzz.push(s);
+            }else if(i%5==0){
+                s="Buzz";
+                fizzbuzz.push(s); 
+            }else{
+                s=i;
+                fizzbuzz.push(s);
+            }
+        }
+        console.log(fizzbuzz);
+        document.getElementById("display").innerHTML=fizzbuzz.join(", ");
+    }
+    </script>
+</body>
+</html>

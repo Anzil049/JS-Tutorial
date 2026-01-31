@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>temperature converter</h1>
+    <input type="text" id="temp" placeholder="temperature">
+    <button onclick="tocelsius()">To Celsius</button>
+    <button onclick="tofahren()">To Fahrenheit</button>
+    <div id="display"></div>
+    
+    <script>
+        var n;
+        var val;
+        function tofahren(){
+            n=parseFloat(document.getElementById("temp").value);
+            val=parseFloat((n*9/5)+32);
+            console.log(val);
+            document.getElementById("display").innerHTML="fahrenheit="+val;
+        }
+        function tocelsius(){
+            n=parseFloat(document.getElementById("temp").value);
+            val=parseFloat((n-32)*5/9);
+            document.getElementById("display").innerHTML="celsius="+val;
+        }
+    </script>
+
+</body>
+</html>

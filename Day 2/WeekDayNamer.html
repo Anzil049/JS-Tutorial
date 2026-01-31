@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Weekday Namer</h1>
+    <input type="text" id="num" placeholder="enter a numer b/w 1-7">
+    <button onclick="check()">check</button>
+    <script>
+
+        function check(){
+        var num=document.getElementById("num").value;
+        if(num==1){
+            alert("sunday");
+        }else if(num==2){
+            alert("monday");
+        }else if(num==3){
+            alert("tuesday");
+        }else if(num==4){
+            alert("wednesday");
+        }else if(num==5){
+            alert("thursday");
+        }else if(num==6){
+            alert("friday");
+        }else if(num==7){
+            alert("saturday");
+        }else{
+            alert("enter a number b/w 1-7")
+        }
+        }
+
+    </script>
+</body>
+</html>

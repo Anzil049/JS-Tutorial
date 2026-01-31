@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <form>
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <label>Age</label>
+        <input type="text" id="age" placeholder="Enter your age"><br><br>
+        <label>Hobbies</label>
+        <input type="text" id="hobbies" placeholder="Enter your hobbies"><br><br>
+
+    </form>
+    <button id="submit">Submit</button>
+    <div id="display"></div>
+
+
+        <script>
+            const usernameinput=document.getElementById("name");
+            const ageinput=document.getElementById("age");
+            const hobbiesinput=document.getElementById("hobbies");
+            const sbmt=document.getElementById("submit");
+
+            sbmt.addEventListener("click",()=>{
+                var userobj={
+                    name:usernameinput.value,
+                    age:ageinput.value,
+                    hobbies:hobbiesinput.value
+                }
+                // console.log(userobj);
+                // document.getElementById("display").innerHTML=`
+                // name=${userobj.name}<br>
+                // age=${userobj.age}<br>
+                // hobbies=${userobj.hobbies}<br>`
+
+                var user=JSON.stringify(userobj);
+                document.getElementById("display").innerHTML=user;
+
+            })
+            
+
+        </script>
+    
+    
+</body>
+</html>

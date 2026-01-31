@@ -1,0 +1,78 @@
+JAVASCRIPT
+
+*Most popular programming language in the world.
+*Programming language for web.
+*Create interactive web pages & web apps.
+
+*Using framework we can create:
+-web applications
+-mobile applications
+-games
+-desktop applications
+
+*JS codes are embedded in script tag in head or body section of html file or using external JS file which is already linked with html page using src attribute in script tag.
+
+Functions:
+-document.write("");
+  to print
+-alert("");
+  to provide alert with ok button
+-console.log("");
+  to print in the console in inspect
+-// single line comment
+-/*multi
+  line
+  comment*/
+
+variable and datatypes:
+
+//string
+var name="anzil";
+let place="tirur";
+document.write(name);   //to print the value of name
+document.writeln(typeof place);  //to print the datatype of place
+
+//number
+var num1=10;
+var num2=10.5;
+
+//boolean
+var js=true;
+var python=false;
+
+//undefined
+var age;
+
+//null(empty value)
+var phone=null;
+
+//constant
+const pi=3.14
+document.write(pi+"<br>");
+document.write(typeof pi);
+
+//arithmetic operator
+// var num1=11;
+// var num2=20;
+// document.write(num1+num2+"<br>");
+// document.write(num1-num2+"<br>");
+// document.write(num1/num2+"<br>");
+// document.write(num1*num2)+"<br>";
+// document.write(num1**num2+"<br>");
+// document.write(num1%num2+"<br>");
+// num1++;
+// document.write(num1 +"<br>");
+// num1--;
+// document.write(num1 +"<br>")
+
+//switch
+
+
+//for
+
+for(var i=1;i<=5;i++){
+  document.write(i+"<br>")
+}
+
+
+

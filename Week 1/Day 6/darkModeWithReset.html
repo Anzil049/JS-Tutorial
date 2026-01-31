@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .darkmode{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Hello JS</h1>
+    <p>JavaScript (JS) is a versatile, lightweight, interpreted scripting language essential for creating dynamic and
+        interactive web pages. It works alongside HTML and CSS to bring features like animations, dropdown menus, and
+        content updates to life, providing a much richer user experience than static pages alone. While it began as a
+        client-side language run in web browsers, it has since expanded to be used on servers and other devices,
+        becoming a core technology of the World Wide Web.
+        Key Aspects of JavaScript
+        Interactivity: JS enables users to interact with web pages, such as form validation, image carousels, and
+        real-time content refreshes.
+        Dynamic Content: It allows for dynamic changes to a webpage's content, style, and structure after it has loaded,
+        making web applications feel more alive.
+        Core Web Technology: Along with HTML (structure) and CSS (style), JavaScript is one of the three fundamental
+        technologies of the World Wide Web.
+        Client-Side & Server-Side: Traditionally a client-side language, it can now execute on the server (e.g., using
+        Node.js) and other devices thanks to JavaScript engines.
+        Interpreted Language: Unlike compiled languages, JavaScript code is executed directly by an interpreter (or a
+        just-in-time compiler for better performance) without a separate compilation step beforehand.
+        Not Related to Java: Despite the similar name, JavaScript is a distinct language and not a "younger brother" of
+        Java, a common misconception.
+    </p>
+    <button onclick="dark()">darkmode</button>
+    <button onclick="reset()">reset</button>
+
+    <script>
+        var body=document.body;
+        function dark(){
+            body.classList.add("darkmode")
+        }
+        function reset(){
+            body.classList.remove("darkmode")
+        }
+    </script>
+</body>
+
+</html>

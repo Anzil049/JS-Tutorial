@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Multiplication table</h1>
+    <div id="display" ></div>
+    
+    <script>
+        
+        for(var i=1;i<=10;i++){
+                document.writeln(`<h3>Multiplication table of ${i}</h3>`);
+            for(var j=1;j<=10;j++){
+                var result=i*j;
+                // console.log(result);
+                document.writeln(`${i} x ${j} = ${result} <br>`);
+               
+            }
+            document.writeln("<hr>")
+        }
+       
+    
+    </script>
+    
+</body>
